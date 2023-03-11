@@ -140,6 +140,9 @@ func NewNode(typ NodeType) *Node {
 	}
 }
 
+func (n *Node) GetContent() []byte {
+	return n.content
+}
 func (n *Node) String() string {
 	ellipsis := ""
 	snippet := n.Literal
